@@ -1,0 +1,96 @@
+body {
+	font-family:'Ubuntu', sans-serif;
+	background: #1D4350;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+	width: 360px;
+	margin: 100px auto;
+	background-color: #efeaea;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+
+h1 {
+	background: #461c1b;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#dropInp {
+	margin-top: 2px;
+	float: right;
+}
+
+input {
+	height: 45px;
+	width: 100%;
+	border: none;
+	font-family:'Ubuntu', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	text-indent: 20px;
+	background-color: #efeaea;
+	color: #461c1b;
+	box-sizing: border-box;	
+}
+
+input:focus {
+	background-color: white;
+	border: 2px solid #461c1b;
+	outline: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	height: 40px;
+	line-height: 40px;
+	color: #21434f;
+}
+
+li:nth-of-type(odd) {
+	background-color: white;
+}
+
+span.del {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	width: 0;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span.del {
+	width: 40px;
+	opacity: 1.0;
+}
+
+.done {
+	text-decoration: line-through;
+	color: gray;
+}
+
+.checkOff {
+	float: right;
+	height: 40px;
+	margin-right: 15px;
+}
+
+#editLi:focus {
+	border: none;
+	outline: none;
+}
